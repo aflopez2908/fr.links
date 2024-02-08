@@ -29,9 +29,9 @@ class Size(Enum):
 # se hace un map para generar estilos por defecto para toda la aplicacion
 BASE_STYLE = {
     "background_image": url.BACKGROUND_BLACK,
-    "margin": "1rem",
+    "margin" : "1rem",
     rx.Button: {
-        "display": "inline",
+        "display":"inline",
         "width": "100%",
         "height": "100%",
         "padding": Size.SMALL.value,
