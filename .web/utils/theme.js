@@ -1,0 +1,1 @@
+export default {"styles": {"global": {"body": {"backgroundImage": "/fondo2.jpg", "margin": "1rem"}}}}
