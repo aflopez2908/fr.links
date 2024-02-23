@@ -13,7 +13,7 @@ def links() -> rx.Component:
         link_button("likelind", "Un poco de mi vida laboral",
                     url.LILEKILND,"/linkelnd.svg"),
         link_button("Github", "mira mis proyectos", url.GITHUB,"/github.svg"),
-        link_button("Portafolio", "Conoceme un poco mejor", "##","/portafolio.svg"),
+        link_button("Portafolio", "Conoceme un poco mejor", "https://aflopez2908.github.io/portafolio.io/","/portafolio.svg"),
         link_button("CV", "Conoce mi experiencia a fondo", "/hoja de vida alvaro felipe lopez russi .pdf", "/cv.svg"),
         tittles("Contactame"),
         link_button("Email", url.EMAIL,
