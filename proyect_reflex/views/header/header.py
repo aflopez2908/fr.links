@@ -41,7 +41,7 @@ def header() -> rx.Component:
 
     ),
         rx.flex(
-            info_text("+2", " años de experiencia"),
+            info_text("+2", " año de experiencia"),
             rx.spacer(),
             info_text("2", " carreras estudiadas"),
             rx.spacer(),
