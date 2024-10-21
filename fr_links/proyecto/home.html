@@ -255,31 +255,58 @@
         <div class="contact" id="contac">
 
             <h2>contacme</h2>
-            <div class="contacts">
 
-                <div class="grupo">
-                    <h3>email</h3>
-                    <div class="grupo_texto">
-                        <p id="textoACopiar">aflopezrussi@gmail.com</p>
-                        <a href="mailto:aflopezrussi@gmail.com"><button><img src="img/send.svg" alt="send"></button></a>
-                        <button id="botonCopiar"><img src="img/copy.svg" alt="copy"></button>
+            <div class="contact_container">
+                <div class="contacts">
 
+                    <div class="grupo">
+                        <h3>email</h3>
+                        <div class="grupo_texto">
+                            <p id="textoACopiar">aflopezrussi@gmail.com</p>
+                            <a href="mailto:aflopezrussi@gmail.com"><button><img src="img/send.svg" alt="send"></button></a>
+                            <button id="botonCopiar"><img src="img/copy.svg" alt="copy"></button>
+    
+                        </div>
                     </div>
-                </div>
-                <div class="grupo"></div>
-
-                <div class="grupo">
-                    <h3>linkelnd</h3>
-                    <div class="grupo_texto">
-                        <p id="textoACopiar1">Alvaro Felipe Lopez Russi</p>
-                        <a href="https://www.linkedin.com/in/alvaro-felipe-lopez-russi-3a76521a1/" target="_blank"><button><img src="img/send.svg" alt="send"></button></a>
-                        <button id="botonCopiar1"><img src="img/copy.svg" alt="copy"></button>
-                        <script src="copy.js"></script>
+                    
+    
+                    <div class="grupo">
+                        <h3>linkelnd</h3>
+                        <div class="grupo_texto">
+                            <p id="textoACopiar1">Alvaro Felipe Lopez Russi</p>
+                            <a href="https://www.linkedin.com/in/alvaro-felipe-lopez-russi-3a76521a1/" target="_blank"><button><img src="img/send.svg" alt="send"></button></a>
+                            <button id="botonCopiar1"><img src="img/copy.svg" alt="copy"></button>
+                            <script src="copy.js"></script>
+                        </div>
                     </div>
+                    
+    
                 </div>
-                <div class="grupo"></div>
+
+                <form id="contact-form" class="form">
+                
+        
+                    <label for="from_name">Tu Nombre:</label>
+                    <input type="text" id="from_name" name="from_name" required>
+            
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+            
+                    <button type="submit">Enviar</button>
+                </form>
+                
+                <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                <script src="email.js"></script>
 
             </div>
+
+
+            
+
+            
 
         </div>
 
