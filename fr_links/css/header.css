@@ -1,0 +1,47 @@
+.header{
+    display: flex;
+    margin-top: 3rem;
+}
+.avatar{
+    border-radius: 100%;
+    border: 2px solid black;
+    max-width: 100%;
+    width: 10rem;
+    height: 10rem;
+}
+.info_container{
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name{
+    color: white;
+    font-family: 'Workbench';
+    font-size: 2rem;
+    padding: 1.5rem 1rem ; 
+    text-align: center;
+    border: 4px solid white;
+    margin: 0;
+}
+
+.social{
+    display: flex;  
+    align-items: flex-end;
+    justify-content: center;
+    padding: -2rem 1.5rem;
+}
+
+.social img{
+    width: 1rem;
+    padding: 0.5rem;
+    margin-right: 3rem;
+    text-align: end;
+    cursor: pointer;
+    
+}
+
+span{
+    color: white;
+    font-weight: bold;
+}
