@@ -1,0 +1,95 @@
+.habilities_container{
+    padding-top: 6rem;
+    width: 80%;
+}
+.habilities_container h2{
+    padding-left: 2rem;
+    font-family: "Press Start 2P", system-ui;
+}
+.habilities_container p{
+    font-family: "VT323", monospace;
+}
+
+
+.habilities{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: stretch;
+
+}
+.content{
+    margin-right: 2rem;
+    padding: 1rem;
+    background-color: #7B84A4;
+    position: relative;
+
+
+}
+
+.habilidades {
+    display: none;
+    align-items: center;
+
+}
+.habilidades button{
+    height: 4rem;
+    justify-content: end;
+    margin-left: 2rem;
+    font-family: "VT323", monospace
+}
+
+.habilidades_content{
+    padding-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    margin: 2rem;
+    text-align: center;
+    color: black;
+    font-size: 1.6rem;
+}
+.habilidades img{
+    width: 8rem;
+}
+
+.tarjeta{
+    height: 50%;
+}
+.tarjeta p{
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+}
+.tarjeta img{
+    width: 10rem;
+    height: 30%;
+}
+.textoOculto {
+    align-items: center;
+    justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+    height: 80%;
+  background-color: rgba(123, 132, 164, 1);
+
+
+  color: white;
+  padding: 1rem;
+  opacity: 0; /* Inicialmente, el texto está oculto */
+  transition: opacity 0.6s ease-in-out; /* Añade una transición suave */
+    z-index: 90;
+}
+
+.content:hover .textoOculto {
+  opacity: 1; /* Al hacer hover, el texto aparece */
+}
+
+
+

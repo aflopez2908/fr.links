@@ -1,0 +1,72 @@
+.work{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 4rem;
+
+}
+
+.text_work{
+    display: flex;
+    align-items: center;
+}
+
+.text_work h2{
+    padding: 3rem;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 3rem;
+
+
+}
+.text_work p{
+    width: 41%;
+    margin-left: 12rem;
+    font-family: "VT323", monospace;
+    font-size: 1.6rem;
+}
+
+
+
+.list{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    max-width: 66rem;
+}
+.list li{
+
+    background-color: #7B84A4;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    font-family: "VT323", monospace;
+}
+
+.list li h3{
+    font-size: 2rem;
+    text-decoration: none;
+}
+.list p{
+    font-family: "VT323", monospace;
+    max-width: 150px;
+
+
+}
+.list img{
+    width: 150px;
+}
+
+.button{
+    display: flex;
+    justify-content:flex-end;
+    width: 80%;
+    font-family: "VT323", monospace;
+}
+
+.button button{
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+

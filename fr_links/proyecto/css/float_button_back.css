@@ -1,0 +1,19 @@
+.float_button_back{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    position: fixed;
+    top: 40%;
+    text-align: center;
+    z-index: 100;
+    background-color: #7B84A4;
+    padding: 1rem;
+    border-radius: 1rem;
+    left: 1rem;
+
+}
+
+.float_button_back a {
+    font-family: "VT323", monospace;
+    color: black;
+}
