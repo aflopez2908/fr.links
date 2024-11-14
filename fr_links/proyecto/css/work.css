@@ -1,28 +1,30 @@
 .work{
     display: flex;
     flex-direction: column;
-    width: 80%;
     padding-top: 4rem;
+    justify-content: center;
+    opacity: 0; /* Oculta la sección al principio */
+    transition: opacity 0.5s ease; /* Transición suave cuando la opacidad cambie */
 
 }
 
 .text_work{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .text_work h2{
-    padding: 3rem;
     font-family: "Press Start 2P", system-ui;
     font-size: 3rem;
 
 
 }
 .text_work p{
-    width: 41%;
-    margin-left: 12rem;
+    max-width: 60%; 
     font-family: "VT323", monospace;
     font-size: 1.6rem;
+    text-align: justify;
 }
 
 

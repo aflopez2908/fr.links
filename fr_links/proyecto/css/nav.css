@@ -3,8 +3,9 @@ nav {
     justify-content: center;
     display: flex;
     padding: 1rem;
-    position: fixed;
-    width: 100%;
+    position:fixed;
+    width: 100vw;
+    left: 0;
     font-family: "Press Start 2P", system-ui;
     background-color:#31395a;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
@@ -22,6 +23,35 @@ nav {
 
     padding-right: 4rem;
     text-decoration: none;
+}
+
+/* Responsividad para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    nav {
+        padding: 0.5rem; /* Reduce el padding en pantallas pequeñas */
+        justify-content: space-between; /* Distribuye los elementos en cada extremo */
+    }
+
+    .navbar {
+        flex-direction: column; /* Cambia a disposición vertical en móviles */
+        align-items: center;
+        
+        width: 100%; /* Asegura que ocupe el ancho completo */
+    }
+
+    .navbar li {
+        padding-right: 0; /* Elimina el padding derecho en disposición vertical */
+        padding-bottom: 0.5rem; /* Agrega espacio entre elementos verticales */
+        font-size: 0.9rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
+        justify-content: center;
+    }
+}
+
+/* Responsividad para pantallas medianas (tabletas) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar li {
+        padding-right: 1.5rem; /* Reduce el padding derecho en pantallas medianas */
+    }
 }
 
 
