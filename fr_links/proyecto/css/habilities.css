@@ -1,6 +1,8 @@
 .habilities_container{
     padding-top: 6rem;
     width: 80%;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
 }
 .habilities_container h2{
     padding-left: 2rem;

@@ -10,6 +10,8 @@
     background-color: #7B84A4;
     padding: 1rem;
     border-radius: 1rem;
+    cursor: pointer;
+
 
 }
 
@@ -17,4 +19,5 @@
 
     padding-bottom: 1rem;
     width: 1.5rem;
+    cursor: pointer;
 }

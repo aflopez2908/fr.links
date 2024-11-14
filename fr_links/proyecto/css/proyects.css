@@ -1,0 +1,6 @@
+.proyects{
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+    padding-top: 6rem;
+
+}

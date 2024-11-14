@@ -24,7 +24,10 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="copy.js">
     <link rel="stylesheet" href="css/portafolio.css">
+    <link rel="stylesheet" href="css/proyects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
 
 </head>
 
@@ -34,14 +37,15 @@
             <ul class="navbar">
                 <li><a href="#welcome">home</a></li>
                 <li><a href="#about">about me</a></li>
-                <li><a href="#work">proyects</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#proyects">proyects</a></li>
                 <li><a href="#contac">contacme</a></li>
             </ul>
         </nav>
     </header>
     <main>
 
-        <div class="welcome" id="welcome">
+        <div class="welcome " id="welcome">
             <h2>welcome</h2>
             <h3>I'm</h3>
             <h1>Felipe Russi</h1>
@@ -76,34 +80,69 @@
         </div>
 
         <div class="work" id="work">
-
             <div class="text_work">
-                <h2>work</h2>
-                <p>Desarrollador de Software en Fintech (6 meses)
-                    Desarrollé y di soporte a una aplicación interna de la empresa, optimizando procesos financieros y
-                    mejorando la experiencia del usuario. Implementé nuevas funcionalidades, corregí errores y optimicé
-                    el rendimiento de la aplicación. Además, participé en la documentación técnica y brindé formación a
-                    usuarios internos.</p>
+                <div class="work_title">
+                    <h2>Work Experience</h2>
+                    <div class="social">
+                        <button class="experience" data-descripcion="Desarrollador en Teleperformance, optimizando procesos internos y ofreciendo soporte técnico." onclick="cambiarDescripcion(this)">Teleperformance - 2020</button>
+                        <button class="experience active" data-descripcion="Desarrollador de Software en Fintech (6 meses). Desarrollé y di soporte a una aplicación interna de la empresa, optimizando procesos financieros y mejorando la experiencia del usuario. Implementé nuevas funcionalidades, corregí errores y optimicé el rendimiento de la aplicación. Además, participé en la documentación técnica y brindé formación a usuarios internos." onclick="cambiarDescripcion(this)">Alfa GL - 2024</button>
+                        <button class="experience" data-descripcion="Trabajo Freelance como desarrollador de software, realizando diversos proyectos para clientes." onclick="cambiarDescripcion(this)">Freelance - Currently</button>
+                    </div>
+                </div>
+                <div class="desciptionContainer">
+                    <p id="descripcion">
+                        Desarrollador de Software en Fintech (6 meses). Desarrollé y di soporte a una aplicación interna de la empresa, optimizando procesos financieros y mejorando la experiencia del usuario. Implementé nuevas funcionalidades, corregí errores y optimicé el rendimiento de la aplicación. Además, participé en la documentación técnica y brindé formación a usuarios internos.
+                    </p>
+
+                    <h4>technologies</h4>
+
+                    <div class="technologies">
+
+                        <i class="fa-brands fa-angular" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-js" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-node" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-database" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-html5" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-css3" style="color: #ffffff;"></i>
+
+
+
+                    </div>
+
+
+                </div>
+                
             </div>
+        </div>
+        
+        
+
+
+        </div>
+
+        <div class="proyects" id="proyects">
+
+            <h2>Proyectos</h2>
+
             <div class="list">
 
                 <li>
                     <a href="#">
-                        <h3>proyecto</h3>
+                        <h3>API proyectos</h3>
                         <img src="img/python.svg" alt="#">
                         <p>esta es una pequeña descripcion de un proyecto de software</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <h3>proyecto</h3>
+                        <h3>Analisis de presipitaciones</h3>
                         <img src="img/python.svg" alt="#">
                         <p>esta es una pequeña descripcion de un proyecto de software</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <h3>proyecto</h3>
+                        <h3>Web informativa</h3>
                         <img src="img/python.svg" alt="#">
                         <p>esta es una pequeña descripcion de un proyecto de software</p>
                     </a>
@@ -115,36 +154,6 @@
 
 
         </div>
-        <style>
-            .animate-on-scroll {
-                opacity: 0; /* Oculta los elementos al inicio */
-            }
-            .animate__animated {
-                opacity: 1; /* Muestra los elementos cuando la animación inicia */
-            }
-        
-        </style>
-        <script>
-            const elements = document.querySelectorAll('.work');
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        // Añade las clases de animación cuando el elemento entra en el viewport
-                        entry.target.classList.add('animate__animated', 'animate__fadeInLeft');
-                    } else {
-                        // Elimina las clases de animación cuando el elemento sale del viewport
-                        entry.target.classList.remove('animate__animated', 'animate__fadeInLeft');
-                    }
-                });
-            }, { threshold: 0.2 }); // threshold indica cuánto del elemento debe estar visible (10% en este caso)
-
-            // Observa cada elemento con la clase .animate-on-scroll
-            elements.forEach(element => {
-                observer.observe(element);
-            });
-
-        </script>
 
 
 
@@ -356,6 +365,8 @@
 
         </div>
 
+
+
     </main>
 
     <footer>
@@ -366,6 +377,9 @@
         </div>
     </footer>
 
+    <script src="home.js"></script>
+
 </body>
+
 
 </html>

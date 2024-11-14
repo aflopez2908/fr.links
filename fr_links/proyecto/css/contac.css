@@ -1,8 +1,10 @@
 .contact{
     margin-top: 1rem;
     padding-bottom: 2rem;
-    width: 80%;
     padding-top: 5rem;
+    width: 100%;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
 }
 
 .contact_container{
