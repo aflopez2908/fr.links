@@ -93,5 +93,9 @@
   opacity: 1; /* Al hacer hover, el texto aparece */
 }
 
+.content i{
+    font-size: 6rem;
+}
+
 
 

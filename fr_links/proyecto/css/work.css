@@ -10,11 +10,33 @@
 .technologies i{
     font-size: 3rem;
 }
+.desciptionContainer{
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.desciptionContainer h4{
+    font-family: "VT323", monospace;
+    font-size: 2rem;
+}
+
+.technologies{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.technologies i{
+    margin: 1rem;
+}
 
 .text_work{
     display: flex;
     align-items: initial;
-    justify-content: space-around;
+    justify-content: space-between;
+    max-height: 100%;
 }
 
 .work_title{
@@ -33,7 +55,6 @@
 
 }
 .text_work p{
-    max-width: 60%; 
     font-family: "VT323", monospace;
     font-size: 1.4rem;
     text-align: justify;
@@ -41,48 +62,6 @@
 
 
 
-.list{
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    margin-top: 1rem;
-    flex-wrap: wrap;
-    max-width: 66rem;
-}
-.list li{
-
-    background-color: #7B84A4;
-    padding: 1rem;
-    margin: 1rem;
-    text-align: center;
-    font-family: "VT323", monospace;
-}
-
-.list li h3{
-    font-size: 2rem;
-    text-decoration: none;
-}
-.list p{
-    font-family: "VT323", monospace;
-    max-width: 150px;
-
-
-}
-.list img{
-    width: 150px;
-}
-
-.button{
-    display: flex;
-    justify-content:flex-end;
-    width: 80%;
-    font-family: "VT323", monospace;
-}
-
-.button button{
-    padding: 1rem;
-    font-size: 1.3rem;
-}
 
 
 .social{

@@ -3,62 +3,75 @@ nav {
     justify-content: center;
     display: flex;
     padding: 1rem;
-    position:fixed;
+    position: fixed;
     width: 100vw;
     left: 0;
     font-family: "Press Start 2P", system-ui;
-    background-color:#31395a;
+    background-color: #31395a;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
     z-index: 100;
-
-    
-
-}
-.navbar a{
-    cursor: pointer;
 }
 
-.navbar{
+.navbar {
     display: flex;
-
-
+    list-style: none;
 }
 
-.navbar li{
-
-    padding-right: 4rem;
+.navbar a {
+    cursor: pointer;
+    color: white;
     text-decoration: none;
+}
+
+.navbar li {
+    padding-right: 4rem;
+}
+
+/* Estilos para el menú hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
 }
 
 /* Responsividad para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     nav {
-        padding: 0.5rem; /* Reduce el padding en pantallas pequeñas */
-        justify-content: space-between; /* Distribuye los elementos en cada extremo */
+        padding: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: flex;
     }
 
     .navbar {
-        flex-direction: column; /* Cambia a disposición vertical en móviles */
+        flex-direction: column;
         align-items: center;
-        
-        width: 100%; /* Asegura que ocupe el ancho completo */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #31395a;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+
+    .navbar.active {
+        display: flex;
     }
 
     .navbar li {
-        padding-right: 0; /* Elimina el padding derecho en disposición vertical */
-        padding-bottom: 0.5rem; /* Agrega espacio entre elementos verticales */
-        font-size: 0.9rem; /* Ajusta el tamaño de fuente para pantallas pequeñas */
-        justify-content: center;
+        padding: 1rem 0;
     }
 }
-
-/* Responsividad para pantallas medianas (tabletas) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .navbar li {
-        padding-right: 1.5rem; /* Reduce el padding derecho en pantallas medianas */
-    }
-}
-
-
-
-

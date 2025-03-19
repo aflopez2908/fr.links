@@ -11,7 +11,9 @@ function cambiarDescripcion(button) {
                         <i class="fa-brands fa-html5" style="color: #ffffff;"></i>
                         <i class="fa-brands fa-css3" style="color: #ffffff;"></i>
 `
-    const tech2= `<h1>hola2</h1>`
+    const tech2= `<i class="fa-solid fa-database" style="color: #ffffff;"></i>
+    
+    `
     const tech3= `<i class="fa-brands fa-angular" style="color: #ffffff;"></i>
                         <i class="fa-brands fa-js" style="color: #ffffff;"></i>
                         <i class="fa-brands fa-node" style="color: #ffffff;"></i>

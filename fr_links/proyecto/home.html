@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="css/portafolio.css">
     <link rel="stylesheet" href="css/proyects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/parent.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     
 
@@ -34,14 +35,25 @@
 <body style="background-image: url(img/fondo2.jpg)">
     <header>
         <nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <ul class="navbar">
-                <li><a href="#welcome">home</a></li>
-                <li><a href="#about">about me</a></li>
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#work">Work</a></li>
-                <li><a href="#proyects">proyects</a></li>
-                <li><a href="#contac">contacme</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
+        <script>
+            function toggleMenu() {
+                const navbar = document.querySelector(".navbar");
+                navbar.classList.toggle("active");
+            }
+        </script>
     </header>
     <main>
 
@@ -71,9 +83,7 @@
                     making new proycts and exploring new technologies, i want to
                     change vision of programing and make history helping people who
                     not have code or economic oportunuties</p>
-                <div class="about_button_class">
-                    <a href="about_more.html"><button>explore more</button></a>
-                </div>
+                    
 
             </div>
             <img src="img/avatar.svg" alt="imagen avatar" class="about_image">
@@ -84,9 +94,9 @@
                 <div class="work_title">
                     <h2>Work Experience</h2>
                     <div class="social">
-                        <button class="experience" data-descripcion="Desarrollador en Teleperformance, optimizando procesos internos y ofreciendo soporte técnico." onclick="cambiarDescripcion(this)">Teleperformance - 2020</button>
-                        <button class="experience active" data-descripcion="Desarrollador de Software en Fintech (6 meses). Desarrollé y di soporte a una aplicación interna de la empresa, optimizando procesos financieros y mejorando la experiencia del usuario. Implementé nuevas funcionalidades, corregí errores y optimicé el rendimiento de la aplicación. Además, participé en la documentación técnica y brindé formación a usuarios internos." onclick="cambiarDescripcion(this)">Alfa GL - 2024</button>
-                        <button class="experience" data-descripcion="Trabajo Freelance como desarrollador de software, realizando diversos proyectos para clientes." onclick="cambiarDescripcion(this)">Freelance - Currently</button>
+                        <button class="experience" data-descripcion="Se encargó de gestionar bases de datos para optimizar la información de los clientes, asegurando su precisión y accesibilidad. Destacó por su habilidad en la atención personalizada, utilizando escucha activa para identificar las necesidades de los clientes y proporcionar soluciones técnicas efectivas en el ámbito del software. Su enfoque en la comunicación clara y empática mejoró significativamente la experiencia del cliente y fortaleció las relaciones con los usuarios." onclick="cambiarDescripcion(this)">Teleperformance - 2020</button>
+                        <button class="experience active" data-descripcion="Diseñó, desarrolló y dio soporte a una aplicación interna de la empresa, optimizando procesos financieros y mejorando la experiencia del usuario. Implementó nuevas funcionalidades, solucionó errores y mejoró el rendimiento de la aplicación. Participó activamente en la documentación técnica y en la formación de usuarios internos, abordando tanto el backend como el frontend. Prestó especial atención a la implementación de traducciones automáticas, garantizando accesibilidad multilingüe, y reforzó la seguridad de la aplicación mediante la integración de autenticación con JWT tokens." onclick="cambiarDescripcion(this)">Alfa GL - 2024</button>
+                        <button class="experience" data-descripcion="Especializado en el análisis y posicionamiento de marca para ofrecer soluciones tecnológicas personalizadas a los clientes. Destaca por el diseño de modelos en Figma para planificar de manera estratégica las aplicaciones, asegurando una experiencia de usuario eficiente y alineada con los objetivos del cliente. Se encarga del desarrollo completo y despliegue de aplicaciones web, integrando tanto el frontend como el backend para garantizar funcionalidad, escalabilidad y diseño atractivo que impulsen el éxito de las marcas." onclick="cambiarDescripcion(this)">Freelance - Currently</button>
                     </div>
                 </div>
                 <div class="desciptionContainer">
@@ -106,7 +116,6 @@
                         <i class="fa-brands fa-css3" style="color: #ffffff;"></i>
 
 
-
                     </div>
 
 
@@ -115,7 +124,7 @@
             </div>
         </div>
         
-        
+        <!-- seccion de proyectos -->
 
 
         </div>
@@ -130,21 +139,43 @@
                     <a href="#">
                         <h3>API proyectos</h3>
                         <img src="img/python.svg" alt="#">
-                        <p>esta es una pequeña descripcion de un proyecto de software</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti cupiditate aut repellat a error quia doloremque ipsum fugit reprehenderit. Dolorum animi voluptatum nemo corrupti, facere ad tempora? Recusandae, sapiente omnis?</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <h3>Analisis de presipitaciones</h3>
+                        <h3>Analisis Precipitaicones</h3>
                         <img src="img/python.svg" alt="#">
-                        <p>esta es una pequeña descripcion de un proyecto de software</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias amet laboriosam praesentium quas nesciunt fugit quam doloremque voluptate dicta quae nulla, porro dolore iste ullam necessitatibus ex eaque molestias libero!</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <h3>Web informativa</h3>
+                        <h3>Barberia Web</h3>
                         <img src="img/python.svg" alt="#">
-                        <p>esta es una pequeña descripcion de un proyecto de software</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi facere quae dolores qui culpa pariatur provident ipsa doloremque numquam aperiam architecto voluptas asperiores at sint natus itaque, eaque dignissimos in.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>figma design</h3>
+                        <img src="img/python.svg" alt="#">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi facere quae dolores qui culpa pariatur provident ipsa doloremque numquam aperiam architecto voluptas asperiores at sint natus itaque, eaque dignissimos in.</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <h3>figma design</h3>
+                        <img src="img/python.svg" alt="#">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi facere quae dolores qui culpa pariatur provident ipsa doloremque numquam aperiam architecto voluptas asperiores at sint natus itaque, eaque dignissimos in.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>figma design</h3>
+                        <img src="img/python.svg" alt="#">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi facere quae dolores qui culpa pariatur provident ipsa doloremque numquam aperiam architecto voluptas asperiores at sint natus itaque, eaque dignissimos in.</p>
                     </a>
                 </li>
                 <div class="button">
@@ -157,8 +188,9 @@
 
 
 
+
         <div class="habilities_container">
-            <h2>habilidades</h2>
+            <h2>Noticias importantes blog</h2>
             <div class="habilities">
 
                 <div class="tarjeta" onclick="mostrarHabilidad(1)">
@@ -236,28 +268,28 @@
                 <button onclick="ocultarHabilidad(2)">Volver</button>
                 <div class="habilidades_content">
                     <div class="content">
-                        <p>teamwork</p>
+                        <p>Teamwork</p>
                         <img src="img/Vector.webp" alt="#">
                         <p>click me</p>
-                        <p class="textoOculto">Texto que aparecerá al pasar el cursor</p>
+                        <p class="textoOculto">Me caracterizo por ser una pieza importantes de un equipo debido a mi proactiviad</p>
                     </div>
                     <div class="content">
                         <p>fast learning</p>
                         <img src="img/person.webp" alt="#">
                         <p>click me</p>
-                        <p class="textoOculto">Texto que aparecerá al pasar el cursor</p>
+                        <p class="textoOculto">Aprendo con facilidad y me caracterizo por estudiar de manera autodidacta</p>
                     </div>
                     <div class="content">
                         <p>Resilience</p>
                         <img src="img/pace.webp" alt="#">
                         <p>click me</p>
-                        <p class="textoOculto">Texto que aparecerá al pasar el cursor</p>
+                        <p class="textoOculto">Aunque los errores son humanos, soy reconocido por superarlos y tomamrlo como un punto de mejora</p>
                     </div>
                     <div class="content">
-                        <p>Coupling</p>
+                        <p>Attention to Detail</p>
                         <img src="img/handshake.webp" alt="#">
                         <p>click me</p>
-                        <p class="textoOculto">Texto que aparecerá al pasar el cursor</p>
+                        <p class="textoOculto">I ensure that every aspect of the code, design, and documentation is executed correctly to prevent future issues.</p>
                     </div>
 
                 </div>
@@ -269,23 +301,23 @@
                 <div class="habilidades_content">
                     <div class="content">
                         <p>Spanish</p>
-                        <img src="img/españa.webp" alt="#">
+                        <img src="img/bandera_colombia.svg" alt="#">
                         <p>click me</p>
-                        <p class="textoOculto">Texto que aparecerá al pasar el cursor</p>
+                        <p class="textoOculto">I'm from colombia, where we speak spanish, i'm native speaker</p>
                     </div>
 
                     <div class="content">
                         <p>English</p>
                         <img src="img/usa.webp" alt="#">
                         <p>click me</p>
-                        <p class="textoOculto">Texto que aparecerá al pasar el cursor</p>
+                        <p class="textoOculto">I have been learning English since the school, Currently i'm B2 level</p>
                     </div>
 
                     <div class="content">
                         <p>Portuguese</p>
                         <img src="img/brasil.webp" alt="#">
                         <p>click me</p>
-                        <p class="textoOculto">Texto que aparecerá al pasar el cursor</p>
+                        <p class="textoOculto">I learned Portuguese in the university and i'm A1 level, i studied it because i'm interested in Brazil</p>
                     </div>
 
                 </div>
@@ -360,9 +392,6 @@
 
 
 
-
-
-
         </div>
 
 
@@ -372,8 +401,8 @@
     <footer>
         <div class="logo_footer">F R</div>
         <div>
-            <p>©Todos los derechos reservados</p>
-            <p>una pagina hecha con amor <3< /p>
+
+            <p>una pagina hecha con amor ❤️</p>
         </div>
     </footer>
 
