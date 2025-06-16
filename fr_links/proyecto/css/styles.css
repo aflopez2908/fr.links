@@ -1,0 +1,906 @@
+/* ==========================================================================
+   normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
+   ========================================================================== */
+
+/* Document
+   ========================================================================== */
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Sections
+   ========================================================================== */
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+main {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+a {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+abbr[title] {
+  border-bottom: none;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[hidden] {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* ==========================================================================
+   Estilos Generales
+   ========================================================================== */
+
+/* ==========================================================================
+   Navegación
+   ========================================================================== */
+
+nav {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 1rem;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    font-family: "Press Start 2P", system-ui;
+    background-color: #31395a;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.navbar a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li {
+    padding-right: 4rem;
+}
+
+/* Estilos para el menú hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+/* Responsividad para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    nav {
+        padding: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #31395a;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar li {
+        padding: 1rem 0;
+    }
+}
+
+/* ==========================================================================
+   Bienvenida
+   ========================================================================== */
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.8rem;
+    font-family: "Press Start 2P", system-ui;
+    width: 100%;
+}
+
+.welcome h1 {
+    font-size: 2.3rem;
+}
+
+.welcome h2 {
+    font-size: 5rem;
+    padding-bottom: 0;
+}
+
+.welcome h4 {
+    font-family: "VT323", monospace;
+    font-size: 1.8rem;
+}
+
+.welcome button {
+    font-family: "VT323", monospace;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+}
+
+/* ==========================================================================
+   Sobre Mí
+   ========================================================================== */
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6rem;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+
+.about_text_area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 60%;
+}
+
+.about_button_class {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.about_button_class button {
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.about_image {
+    padding: 1rem;
+    width: 300px;
+}
+
+.about h2 {
+    font-family: "Press Start 2P", system-ui;
+}
+
+.about p {
+    font-family: "VT323", monospace;
+    font-size: 1.6rem;
+    width: 90%;
+}
+
+.about button {
+    font-family: "VT323", monospace;
+    padding: 0.8rem;
+}
+
+.skills {
+    padding-top: 7rem;
+}
+
+.skills h2 {
+    font-family: "Press Start 2P", system-ui;
+}
+
+.grafico {
+    width: 800px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: #7B84A4;
+    font-family: "VT323", monospace;
+}
+
+.barra {
+    display: inline-block;
+    width: 40px;
+    background-color: orangered;
+    margin-right: 10px;
+}
+
+.barra_container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.identificacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 2rem;
+}
+
+.identificacion p {
+    padding-bottom: 2rem;
+}
+
+/* ==========================================================================
+   Habilidades
+   ========================================================================== */
+
+.habilities_container {
+    padding-top: 6rem;
+    width: 80%;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+
+.habilities_container h2 {
+    padding-left: 2rem;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.habilities_container p {
+    font-family: "VT323", monospace;
+}
+
+.habilities {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.content {
+    margin-right: 2rem;
+    padding: 1rem;
+    background-color: #7B84A4;
+    position: relative;
+}
+
+.habilidades {
+    display: none;
+    align-items: center;
+}
+
+.habilidades button {
+    height: 4rem;
+    justify-content: end;
+    margin-left: 2rem;
+    font-family: "VT323", monospace;
+}
+
+.habilidades_content {
+    padding-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    margin: 2rem;
+    text-align: center;
+    color: black;
+    font-size: 1.6rem;
+}
+
+.habilidades img {
+    width: 8rem;
+}
+
+.tarjeta {
+    height: 50%;
+}
+
+.tarjeta p {
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+}
+
+.tarjeta img {
+    width: 10rem;
+    height: 30%;
+}
+
+.textoOculto {
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(123, 132, 164, 1);
+    color: white;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+    z-index: 90;
+}
+
+.content:hover .textoOculto {
+    opacity: 1;
+}
+
+.content i {
+    font-size: 6rem;
+}
+
+/* ==========================================================================
+   Trabajo
+   ========================================================================== */
+
+.work {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+    justify-content: center;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+
+.technologies i {
+    font-size: 3rem;
+}
+
+.desciptionContainer {
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.desciptionContainer h4 {
+    font-family: "VT323", monospace;
+    font-size: 2rem;
+}
+
+.technologies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.technologies i {
+    margin: 1rem;
+}
+
+.text_work {
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+    max-height: 100%;
+}
+
+.work_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_work h2 {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 2rem;
+    text-align: top;
+    padding-right: 2rem;
+}
+
+.text_work p {
+    font-family: "VT323", monospace;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.social {
+    display: flex;  
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-around;
+    padding: -2rem 1.5rem;
+}
+
+.social img {
+    width: 1rem;
+    padding: 0.5rem;
+    margin-right: 3rem;
+    text-align: end;
+    cursor: pointer;
+}
+
+.experience {
+    font-family: "VT323", monospace;
+    padding: 0.5rem;
+    margin: 0.3rem 0;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.experience:hover {
+    background-color: #f3890e;
+}
+
+.experience.active {
+    background-color: #f3890e;
+}
+
+/* ==========================================================================
+   Proyectos
+   ========================================================================== */
+
+.proyects {
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+    padding-top: 6rem;
+}
+
+.proyects h2 {
+    font-size: 2rem;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.2rem;
+    justify-content: center;
+    padding-top: 2rem;
+    max-width: 66rem;
+    margin: 0 auto;
+}
+
+.list a {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.list li {
+    background-color: #7B84A4;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    align-content: center;
+    font-family: "VT323", monospace;
+}
+
+.list li h3 {
+    font-size: 2rem;
+    text-decoration: none;
+    max-width: 250px;
+}
+
+.list p {
+    font-family: "VT323", monospace;
+    max-width: 250px;
+    text-align: justify;
+}
+
+.list img {
+    width: 150px;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    font-family: "VT323", monospace;
+}
+
+.button button {
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+/* ==========================================================================
+   Portafolio
+   ========================================================================== */
+
+.head_portafolio {
+    display: flex;
+    padding-top: 7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_head_portafolio {
+    padding-right: 3rem;
+}
+
+.text_head_portafolio h2 {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 2.5rem;
+}
+
+.text_head_portafolio p {
+    font-family: "VT323", monospace;
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+.head_portafolio img {
+    width: 20rem;
+}
+
+.list_portfolio {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    max-width: 66rem;
+}
+
+.list_portfolio li {
+    background-color: #7B84A4;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    font-family: "VT323", monospace;
+}
+
+.list_portfolio li h3 {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.list_portfolio p {
+    font-family: "VT323", monospace;
+    max-width: 150px;
+}
+
+.list_portfolio img {
+    width: 150px;
+}
+
+/* ==========================================================================
+   Contacto
+   ========================================================================== */
+
+.contact {
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+    width: 100%;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+
+.contact_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.form label {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.form textarea {
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-family: "VT323", monospace;
+    resize: none;
+}
+
+.form button {
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    font-family: "VT323", monospace;
+}
+
+.form button:hover {
+    background-color: #f3890e;
+}
+
+.form input {
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    font-family: "VT323", monospace;
+}
+
+.contact h2 {
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    font-size: 4rem;
+    height: 50%;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+}
+
+.grupo h3 {
+    font-family: "Press Start 2P", system-ui;
+}
+
+.grupo_texto {
+    display: flex;
+    align-items: center;
+}
+
+.grupo_texto p {
+    background-color: #7B84A4;
+    margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-family: "VT323", monospace;
+}
+
+.grupo_texto img {
+    background-color: #7B84A4;
+    padding: 0.5rem;
+    width: 15px;
+    border-radius: 100%;
+}
+
+.grupo_texto button {
+    background-color: #7B84A4;
+    margin-left: 1rem;
+    border-radius: 100%;
+}
+
+/* ==========================================================================
+   Botones Flotantes
+   ========================================================================== */
+
+.FloatButton {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    position: fixed;
+    right: 1rem;
+    top: 40%;
+    text-align: center;
+    z-index: 100;
+    background-color: #7B84A4;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.FloatButton img {
+    padding-bottom: 1rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+.float_button_back {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    position: fixed;
+    top: 40%;
+    text-align: center;
+    z-index: 100;
+    background-color: #7B84A4;
+    padding: 1rem;
+    border-radius: 1rem;
+    left: 1rem;
+}
+
+.float_button_back a {
+    font-family: "VT323", monospace;
+    color: black;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    padding: 2rem;
+}
+
+.logo_footer {
+    font-family: Workbench, serif;
+    border: 2px solid white;
+    padding: 1rem;
+    color: white;
+}
+
+.footer_description p {
+    color: white;
+}
+
+/* ==========================================================================
+   Parent
+   ========================================================================== */ 
